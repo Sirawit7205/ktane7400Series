@@ -1,0 +1,7 @@
+IC placement position
+-0.0478 0.027 0.0722
+
+LED placement position
+TL: -0.0679 0.0173 0.0646
+delta Z: 0.0153
+delta X: 0.0858
