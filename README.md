@@ -1,1 +1,1 @@
-74 Series: Module for KTaNE
+7400-series: Module for KTaNE

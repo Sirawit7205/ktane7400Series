@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(../font/SpecialElite.ttf);
+}
+
+@font-face {
+  font-family: 'alphabetized cassette tapes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('alphabetized cassette tapes'), local('alphabetizedcassettetapes-Regular'), url(../font/AlphabetizedCassetteTapes.ttf);
+}
