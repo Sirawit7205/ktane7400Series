@@ -40,7 +40,7 @@
      id="namedview8"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="11.5"
+     inkscape:cx="108.57843"
      inkscape:cy="174"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
@@ -156,7 +156,7 @@
          sodipodi:role="line">RST</tspan></text>
   </g>
   <circle
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.40240002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.40240002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path981"
      cx="89.25"
      cy="54.25"
@@ -172,7 +172,7 @@
        id="tspan983"
        x="64.066193"
        y="-113.13533"
-       style="stroke-width:0.57494003;stroke-miterlimit:4;stroke-dasharray:none">KT74HC595</tspan></text>
+       style="stroke-width:0.57494003;stroke-miterlimit:4;stroke-dasharray:none">KT74HC138</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:19.14552307px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.57494003;stroke-miterlimit:4;stroke-dasharray:none"
@@ -184,7 +184,7 @@
        id="tspan983-5"
        x="64.744316"
        y="-89.888824"
-       style="stroke-width:0.57494003;stroke-miterlimit:4;stroke-dasharray:none">8517</tspan></text>
+       style="stroke-width:0.57494003;stroke-miterlimit:4;stroke-dasharray:none">85171015</tspan></text>
   <circle
      style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.40240002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path1005"

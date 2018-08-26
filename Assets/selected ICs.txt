@@ -10,9 +10,11 @@ DIP14	7400 quad 2-NAND
 	7421 dual 4-AND
 	7430 sngl 8-NAND
 	7404 hexa NOT
+	7434 hexa BUF
 DIP16	74160 sync dec-cnt
 	74161 sync 4bit-cnt
 	74192 updn dec-cnt
 	74193 updn 4bit-cnt
 	7442 bcd-dec decoder
 	74138 3-to-8 demux
+	74238 3-t0-8 demux non-inverting

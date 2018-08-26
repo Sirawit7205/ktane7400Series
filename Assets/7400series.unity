@@ -1517,33 +1517,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 102595836803314956, guid: 7d3cc90c439213a449c89c4909b96abe,
-        type: 2}
-      propertyPath: m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 102103036015313268, guid: 7d3cc90c439213a449c89c4909b96abe,
-        type: 2}
-      propertyPath: m_FontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 102595836803314956, guid: 7d3cc90c439213a449c89c4909b96abe,
-        type: 2}
-      propertyPath: m_FontSize
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 102103036015313268, guid: 7d3cc90c439213a449c89c4909b96abe,
-        type: 2}
-      propertyPath: m_FontSize
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 4577560180418746, guid: 7d3cc90c439213a449c89c4909b96abe, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4554571209381404, guid: 7d3cc90c439213a449c89c4909b96abe, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.8633344
+    - target: {fileID: 1544008579939216, guid: 7d3cc90c439213a449c89c4909b96abe, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d3cc90c439213a449c89c4909b96abe, type: 2}

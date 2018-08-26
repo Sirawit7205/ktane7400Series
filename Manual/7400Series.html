@@ -155,13 +155,17 @@
 					
 						<h3>Step 2: Determining the disarming logic state</h3>
 						
-						<p>7400-series IC will have at most 8 logic output pins, which will be clearly marked in the datasheet. Use the table below to get the logic state for disarming the module.</p>
+						<p>7400-series IC will have at most 10 logic output pins, which will be clearly marked in the datasheet. Use the table below to get the logic state for disarming the module.</p>
 						
 						<table>
 						  <tr>
 							<th>Output pin (if applicable)</th>
-							<th>Output is HIGH if</th>
+							<th>Output is HIGH (and LOW otherwise) if</th>
 						  </tr>
+						  <tr>
+							<td>0</td>
+							<td>No parallel port.</td>
+						  </tr>						  
 						  <tr>
 							<td>1</td>
 							<td>PS/2 port is present.</td>
@@ -194,6 +198,10 @@
 							<td>8</td>
 							<td>Last digit of the bomb's serial number is odd.</td>
 						  </tr>
+						  <tr>
+							<td>9</td>
+							<td>Has 1 D battery.</td>
+						  </tr>						  
 						</table>
 						
 						<h3>Step 3: Check out the datasheet</h3>
