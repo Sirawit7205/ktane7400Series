@@ -12,7 +12,7 @@
         <style>
 			note {
 				font-family: 'alphabetized cassette tapes';
-				font-size: 40px;
+				font-size: 35px;
 			}
 			
 			dtsh-head {
@@ -21,10 +21,18 @@
 				font-size: 40px;
 			}
 			
-			.dtsh-bottom {
+			.dtsh-pageno {
 				font-family: 'Arial';
 				font-size: 15px;
-				text-align: right;
+				float: left;
+				margin-left: 9%;
+			}
+			
+			.dtsh-copyright {
+				font-family: 'Arial';
+				font-size: 15px;
+				float: right;
+				margin-right: 9%;
 			}
 			
             table {
@@ -74,9 +82,10 @@
 			}
 			
 			hr {
-				margin: 0px;
+				margin-left: 9%;
 				height: 2px;
 				background-color: #333;
+				width: 82%;
 			}
 			
         </style>
@@ -260,10 +269,12 @@
 								</td>
 							</tr>
 						</table>
-						
-						<hr>
-						<div class="dtsh-bottom">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+
 					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 3</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
 				</div>
 				
 				<div class="page page-bg-04">
@@ -289,8 +300,8 @@
 									<p>
 										<b>Description:</b><br>
 										<ul>
-											<li>Four 2-input NAND gates, labeled as G1-G4</li>
-											<li>For each gate, if both inputs are low, the output is high. Otherwise, the output is low.</li>
+											<li>Four 2-input NAND gates, labeled as G0-G3</li>
+											<li>For each gate, if both inputs are high, the output is low. Otherwise, the output is high.</li>
 										</ul>
 									</p>
 								</td>
@@ -307,31 +318,664 @@
 						
 						<table class="dtsh">
 							<th colspan="2">
-								7400 - Quad 2-input NAND gate
+								7402 - Quad 2-input NOR gate
 							</th>
 							<tr>
 								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7402.svg"/>
 									<b>Pin configuration</b>
 								</td>
 								<td>
-									<p><b>Description:</b><br>
-									Line 1<br>
-									Line 2<br>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Four 2-input NOR gates, labeled as G0-G3</li>
+											<li>For each gate, if both inputs are low, the output is high. Otherwise, the output is low.</li>
+										</ul>
 									</p>
 								</td>
 							</tr>
 							<tr>
-
 								<td>
-									<b>Notes:</b>
+									<p>
+										<b>Notes:</b><br>
+										<note>If the IC was produced in November of any year, defusing bits are always 1001.</note>
+									</p>
 								</td>
 							</tr>
 						</table>
 
-						<hr>
-						<div class="dtsh-bottom">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+						<table class="dtsh">
+							<th colspan="2">
+								7404 - Hex inverter gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7404.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Six NOT gates, labeled as G0-G5</li>
+											<li>For each gate, the input will be inverted on the output.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>Set the 4th bit to 0 if the lot no. is less than 1100.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
 					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 4</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
 				</div>
+				
+				<div class="page page-bg-05">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7408 - Quad 2-input AND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/7408.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Four 2-input AND gates, labeled as G0-G3</li>
+											<li>For each gate, if both inputs are high, the output is high. Otherwise, the output is low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>The AUC series chips have NAND gates inside.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7410 - Triple 3-input NAND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7410.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Three 3-input NAND gates, labeled as G0-G2</li>
+											<li>For each gate, if all inputs are high, the output is low. Otherwise, the output is high.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>All chips made after 2016 are fakes! G1 is somehow an OR gate.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+						<table class="dtsh">
+							<th colspan="2">
+								7411 - Triple 3-input AND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7411.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Three 3-input AND gates, labeled as G0-G2</li>
+											<li>For each gate, if all inputs are high, the output is high. Otherwise, the output is low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>No additional info.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 5</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+				
+				<div class="page page-bg-06">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7420 - Dual 4-input NAND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/7420.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Two 4-input NAND gates, labeled as G0-G1</li>
+											<li>For each gate, if all inputs are high, the output is low. Otherwise, the output is high.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>For some reason, tapping CLK three times with exactly 2 D batteries will defuse the module.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7421 - Dual 4-input AND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7421.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Two 4-input AND gates, labeled as G0-G1</li>
+											<li>For each gate, if all inputs are high, the output is high. Otherwise, the output is low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>No additional info.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+						<table class="dtsh">
+							<th colspan="2">
+								7427 - Triple 3-input NOR gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7427.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Three 3-input NOR gates, labeled as G0-G2</li>
+											<li>For each gate, if all inputs are low, the output is high. Otherwise, the output is low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>No additional info.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 6</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+
+				<div class="page page-bg-07">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7430 - Single 8-input NAND gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/7430.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>One 8-input NAND gate</li>
+											<li>If all inputs are high, the output is low. Otherwise, the output is high.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>Turn on all NC pins before turning on the power!</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7432 - Quad 2-input OR gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7432.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Four 2-input OR gates, labeled as G0-G3</li>
+											<li>For each gate, if all inputs are low, the output is low. Otherwise, the output is high.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>No additional info.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+						<table class="dtsh">
+							<th colspan="2">
+								7434 - Hex buffer gate
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/7434.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Six Buffer gates, labled as G0-G5</li>
+											<li>For each gate, the input is high, the output is high. Otherwise, the output is low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>Chips made in week no.10-20 after 2010 are actually hex inverter chips.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 7</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>	
+
+				<div class="page page-bg-01">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								7442 - BCD to decimal decoder
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/7442.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Convert the bits from Inputs to decimal to find the output pin that is low. All other pins will be high.</li>
+											<li>Inputs of 10 or higher will result in all-high output.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>The output pin that is low = port count.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74138 - 3 to 8 line demultiplexer
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/74138.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Convert the bits from Inputs to decimal to find the output pin that is low. All other pins will be high.</li>
+											<li>Turn on multiplexing by setting G1 to HIGH and G2A and G2B to LOW, else all output pins will be high.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>The output pin that is low = battery count.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 8</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+				
+				<div class="page page-bg-02">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74160 - Synchronous decade counter
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/74160.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Load initial data to the counter by pulsing low on PE pin.</li>
+											<li>Start the counter by turning on the clock and setting CEP and CET to high.</li>
+											<li>The counter will restart from 0 if the chip is reset or if it counts over 9.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>If the disarming state is over 9 (1001), subtract it by 9. Stop the counting at correct output to defuse the module.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74161 - Synchronous 4-bit counter
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/74161.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Load initial data to the counter by pulsing low on PE pin.</li>
+											<li>Start the counter by turning on the clock and setting CEP and CET to high.</li>
+											<li>The counter will restart from 0 if the chip is reset or if it counts over 15.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>Stop the counting at correct output to defuse the module. PRESS RESET FIRST AFTER POWER ON!!!!</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 9</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+				
+				<div class="page page-bg-03">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74192 - Decade up/down counter
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/74192.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Load initial data to the counter by pulsing low on PL pin.</li>
+											<li>Count up by setting PL and DOWN to high then pulse UP high, and vice versa.</li>
+											<li>Counting up from 9 will result in rollover, and vice versa.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>No additional info.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74193 - 4-bit up/down counter
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+								<img src="img/pinouts/74193.svg"/>
+									<b>Pin configuration</b>
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and D is the most significant bit.</li>
+											<li>Load initial data to the counter by pulsing low on PL pin.</li>
+											<li>Count up by setting PL and DOWN to high then pulse UP high, and vice versa.</li>
+											<li>Counting up from 15 will result in rollover, and vice versa.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>If the IC was made during 1990-1995, you MUST start counting from 8.</note>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 10</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+				
+				<div class="page page-bg-04">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">7400-series</span>
+                    </div>
+                    <div class="page-content">
+					
+						<img src="img/KTANE_Semiconductor_BW.png" class="logo" />
+						<dtsh-head>7400-series</dtsh-head>
+						
+						<table class="dtsh">
+							<th colspan="2">
+								74238 - 3 to 8 line non-inverting demultiplexer
+							</th>
+							<tr>
+								<td rowspan="2" id="pincfg">
+									<img src="img/pinouts/74238.svg"/>
+									<b>Pin configuration</b>									
+								</td>
+								<td>
+									<p>
+										<b>Description:</b><br>
+										<ul>
+											<li>Input A is the least significant bit and C is the most significant bit.</li>
+											<li>Convert the bits from Inputs to decimal to find the output pin that is high. All other pins will be low.</li>
+											<li>Turn on multiplexing by setting G1 to HIGH and G2A and G2B to LOW, else all output pins will be low.</li>
+										</ul>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<b>Notes:</b><br>
+										<note>The output pin that is high = lit indicator count.</note>
+									</p>
+								</td>
+							</tr>
+						</table>	
+						
+						
+					</div>
+					<hr>
+					<div class="dtsh-pageno">Page 11</div>
+					<div class="dtsh-copyright">[Rev. 15] Copyright Ⓒ 2015-2018, KTANE Semiconductor Inc.</div>
+					
+				</div>
+				
             </div>
         </div>
     </body>
